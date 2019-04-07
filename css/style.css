@@ -35,7 +35,21 @@
       border: 1px ;
       border-top: none;
     }
+    h4 { color: #209CEE; font-family: cursive}
 
+    .footer {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 1rem;
+      background-color: #555;
+      text-align: center;
+      color:#FFF;
+    }
+    .footer a {
+      color:#FFF;
+    }
     .dropdown {
       position: absolute;
       display: inline-block;
@@ -74,7 +88,7 @@
         width: 100%;
     }
     .site-title {
-        margin-top: 10px;
+        margin-top: 15px;
         font-size: 36px;
         font-weight: 500;
         line-height: 1;
