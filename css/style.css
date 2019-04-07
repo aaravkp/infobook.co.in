@@ -34,6 +34,7 @@
       display: none;
       border: 1px ;
       border-top: none;
+      margin-left:15px;
     }
     h4 { color: #209CEE; font-family: cursive}
 
@@ -79,6 +80,12 @@
 
     .titlestyle {
         margin:6px;
+
+    }
+
+    .infocontact {
+        margin:6px;
+        text-align:right;
 
     }
     .search-container {
