@@ -1,41 +1,49 @@
-
-(function($) {
-    'use strict';
-
-    // Main Navigation
-    $( '.hamburger-menu' ).on( 'click', function() {
-        $(this).toggleClass('open');
-        $('.site-navigation').toggleClass('show');
-    });
-
-    // Testimonial Slider
-    var swiper = new Swiper('.testimonial-slider', {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        loop: true,
-        effect: 'fade',
-        speed: 800,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true
+        function openCourse(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
         }
-    });
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
 
-    $('.gallery-wrap').masonry({
-        itemSelector: '.gallery-grid'
-    });
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
 
-    // Accordion & Toggle
-    $('.accordion-wrap.type-accordion').collapsible({
-        accordion: true,
-        contentOpen: 0,
-        arrowRclass: 'arrow-r',
-        arrowDclass: 'arrow-d'
-    });
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
 
-    $('.accordion-wrap .entry-title').on('click', function() {
-        $('.accordion-wrap .entry-title').removeClass('active');
-        $(this).addClass('active');
-    });
-
-})(jQuery);
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }

@@ -1,0 +1,91 @@
+    /* Style the tab */
+        .tab {
+          overflow: hidden;
+      border: 1px;
+      background-color: #555;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+      color:#FFF;
+      font-weight: 500;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #228;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #209CEE;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      border: 1px ;
+      border-top: none;
+    }
+
+    .dropdown {
+      position: absolute;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 197px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      margin-top : 59px
+
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown a:hover {background-color: #ddd;}
+
+    .show {display: block;}
+
+    .titlestyle {
+        margin:6px;
+
+    }
+    .search-container {
+        float: right;
+        cursor: pointer;
+        border: none;
+        width: 100%;
+    }
+    .site-title {
+        margin-top: 10px;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1;
+        text-align: left !important;
+    }
+
+    .site-title a {
+        color: #0f0f3d;
+        text-decoration: none;
+    }
+
+    .site-title a span {
+        color: #209CEE;
+    }
