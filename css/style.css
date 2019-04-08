@@ -108,7 +108,6 @@
     .site-title a span {
         color: #209CEE;
     }
-
     * {
         box-sizing: border-box;
       }
@@ -157,7 +156,7 @@
         }
         #myMenu li a {
 
-          backgrxound-color: white;
+          background-color: white;
 
           padding: 12px;
 
