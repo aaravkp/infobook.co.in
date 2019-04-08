@@ -36,7 +36,7 @@
       border-top: none;
       margin-left:15px;
     }
-    h4 { color: #209CEE; font-family: cursive}
+    h4 { font-family: Algerian}
 
     .footer {
       position: absolute;
@@ -63,7 +63,7 @@
       min-width: 197px;
       overflow: auto;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      margin-top : 59px
+      margin-top : 53px
 
     }
 
