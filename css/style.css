@@ -110,67 +110,50 @@
         color: #209CEE;
     }
     * {
-        box-sizing: border-box;
-      }
-        /* Create a column layout with Flexbox */
+      box-sizing: border-box;
+    }
+    /* Create a column layout with Flexbox */
+    .row {
+      display: flex;
+    }
+    /* Left column (menu) */
+    .left {
+      flex: 20%;
+      padding: 18px 0;
+      background-color:#ddd;
+    }
 
-        .row {
-          display: flex;
-        }
-        /* Left column (menu) */
-        .left {
-          flex: 6%;
-          padding: 18px 0;
-        }
-        .left h2 {
-          padding-left: 8px;
-        }
-        /* Right column (page content) */
-        .right {
-          flex: 65%;
-          padding: 15px;
-        }
-        /* Style the search box */
+    .left h3 {
+      padding-left: 8px;
+    }
+    /* Right column (page content) */
+    .right {
+      flex: 80%;
+      padding: 15px;
+    }
 
-        #mySearch {
+    /* Style the search box */
+    #mySearch {
+      width: 100%;
+      font-size: 18px;
+      padding: 11px;
+      border:1px solid #ddd;
+    }
 
-          width: 100%;
-
-          font-size: 18px;
-
-          padding: 11px;
-
-          border:1px solid #ddd;
-
-        }
-
-        /* Style the navigation menu inside the left column */
-
-        #myMenu {
-
-          list-style-type: none;
-
-          padding: 0;
-
-          margin: 0;
-
-        }
-        #myMenu li a {
-
-          background-color: #f6f6f6;
-
-          padding: 12px;
-
-          text-decoration: none;
-
-          font-size: 18px;
-
-          color: black;
-
-          display: block
-
-        }
-
-        #myMenu li a:hover {
-          background-color: #eee;
-        }
+    /* Style the navigation menu inside the left column */
+    #myMenu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    #myMenu li a {
+      background-color: #f6f6f6;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 15px;
+      color: black;
+      display: block
+    }
+    #myMenu li a:hover {
+      background-color: #eee;
+    }
