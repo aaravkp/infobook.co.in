@@ -1,4 +1,4 @@
-        function openCourse(evt, cityName) {
+        function openCourse(evt, courseName) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
           for (i = 0; i < tabcontent.length; i++) {
@@ -8,7 +8,7 @@
           for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
           }
-          document.getElementById(cityName).style.display = "block";
+          document.getElementById(courseName).style.display = "block";
           evt.currentTarget.className += " active";
         }
         // Get the element with id="defaultOpen" and click on it
@@ -16,7 +16,7 @@
 
         /* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
-        function myFunction() {
+        function fnDropdownMenu() {
           document.getElementById("myDropdown").classList.toggle("show");
         }
 
@@ -34,21 +34,7 @@
           }
         }
 
-        function openCity(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
-        }
-
-    function myFunction() {
+    function fnHomeSideBar() {
       var input, filter, ul, li, a, i;
       input = document.getElementById("mySearch");
       filter = input.value.toUpperCase();
@@ -63,4 +49,3 @@
         }
       }
     }
-   

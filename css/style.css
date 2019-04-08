@@ -35,6 +35,7 @@
       border: 1px ;
       border-top: none;
       margin-left:15px;
+      margin-right: 15px;
     }
     h4 { font-family: Algerian}
 
@@ -58,7 +59,7 @@
       display: none;
       position: absolute;
       background-color: #f1f1f1;
-      min-width: 197px;
+      min-width: 201px;
       overflow: auto;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       margin-top : 53px
@@ -118,8 +119,8 @@
         }
         /* Left column (menu) */
         .left {
-          flex: 35%;
-          padding: 15px 0;
+          flex: 6%;
+          padding: 18px 0;
         }
         .left h2 {
           padding-left: 8px;
@@ -156,7 +157,7 @@
         }
         #myMenu li a {
 
-          background-color: white;
+          background-color: #f6f6f6;
 
           padding: 12px;
 
@@ -171,5 +172,5 @@
         }
 
         #myMenu li a:hover {
-          background-color: white;
+          background-color: #eee;
         }

@@ -64,7 +64,7 @@
           <button class="tablinks" onclick="openCourse(event, 'pythontab')">Python</button>
           <button class="tablinks" onclick="openCourse(event, 'angulartab')">Angular</button>
           <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Interview Questions <span class="caret"></span> </button>
+              <button onclick="fnDropdownMenu()" class="dropbtn">Interview Questions <span class="caret"></span> </button>
               <div id="myDropdown" class="dropdown-content">
                 <a href="#dotnettab">.NET</a>
                 <a href="#javatab">Java</a>
@@ -79,9 +79,9 @@
       <div id="hometab" class="tabcontent">
 
             <div class="row">
-              <div class="left" style="background-color:#bbb;">
-                <h2>Menu</h2>
-                <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+              <div class="left">
+                <h2>Courses</h2>
+                <input type="text" id="mySearch" onkeyup="fnHomeSideBar()" placeholder="Search.." title="Type in a category">
                 <ul id="myMenu">
                   <li><a href="#">HTML</a></li>
                   <li><a href="#">CSS</a></li>
