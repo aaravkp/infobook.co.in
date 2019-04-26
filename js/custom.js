@@ -1,3 +1,5 @@
+
+        //tab menu
         function openCourse(evt, courseName) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
@@ -16,7 +18,7 @@
 
         /* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
-        function fnDropdownMenu() {
+        function setDropdownMenu() {
           document.getElementById("myDropdown").classList.toggle("show");
         }
 
@@ -34,18 +36,29 @@
           }
         }
 
-    function fnHomeSideBar() {
-      var input, filter, ul, li, a, i;
-      input = document.getElementById("mySearch");
-      filter = input.value.toUpperCase();
-      ul = document.getElementById("myMenu");
-      li = ul.getElementsByTagName("li");
-      for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-          li[i].style.display = "";
-        } else {
-          li[i].style.display = "none";
+        //set home side bar
+        function setHomeSideBar() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("mySearch");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myMenu");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
         }
-      }
-    }
+
+
+
+
+
+
+
+
+
+

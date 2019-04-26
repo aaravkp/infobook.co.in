@@ -40,16 +40,16 @@
     h4 { font-family: Algerian}
 
     .footer {
-      position: fixed;
-      padding-top: 10px;
-      padding-bottom: 0px;
-      background-color: #555;
-      text-align: center;
-      color:#FFF;
+        background-color: #555;
+        padding-bottom: 0px;
+        height:200px;
+        text-align:center;
+        color:#FFF;
     }
     .footer a {
-      color:#FFF;
+        color:#209CEE;
     }
+
     .dropdown {
       position: absolute;
       display: inline-block;
@@ -84,7 +84,7 @@
 
     .infocontact {
         margin:6px;
-        text-align:right;
+        text-align:left;
 
     }
     .search-container {

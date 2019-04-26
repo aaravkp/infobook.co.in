@@ -57,21 +57,21 @@
         </div>
       <div class="tab">
           <button class="tablinks" onclick="openCourse(event, 'hometab')" id="defaultOpen"><i class="fa fa-home fa-lg"></i></button>
-          <button class="tablinks" onclick="openCourse(event, 'dotnettab')">.NET</button>
-          <button class="tablinks" onclick="openCourse(event, 'javatab')">Java</button>
+          <button id="btndotnettab" class="tablinks" onclick="openCourse(event, 'dotnettab')">.NET</button>
+          <button class="tablinks" onclick="openCourse(event, 'javatab')">SQL</button>
           <button class="tablinks" onclick="openCourse(event, 'awscloudtab')">AWS Cloud</button>
           <button class="tablinks" onclick="openCourse(event, 'javascripttab')">Javascript</button>
           <button class="tablinks" onclick="openCourse(event, 'pythontab')">Python</button>
           <button class="tablinks" onclick="openCourse(event, 'angulartab')">Angular</button>
           <div class="dropdown">
-              <button onclick="fnDropdownMenu()" class="dropbtn">Interview Questions <span class="caret"></span> </button>
+              <button onclick="setDropdownMenu()" class="dropbtn">Interview Questions <span class="caret"></span> </button>
               <div id="myDropdown" class="dropdown-content">
                 <a href="#dotnettab">.NET</a>
                 <a href="#javatab">Java</a>
                 <a href="#awscloudtab">AWS Cloud</a>
                 <a href="#javascripttab">Javascript</a>
-                  <a href="#pythontab">Python</a>
-                  <a href="#angulartab">Angular</a>
+                <a href="#pythontab">Python</a>
+                <a href="#angulartab">Angular</a>
               </div>
               </div>
       </div>
@@ -81,26 +81,106 @@
             <div class="row">
               <div class="left">
                 <h3>Courses</h3>
-                <input type="text" id="mySearch" onkeyup="fnHomeSideBar()" placeholder="Search.." title="Type in a category">
+                <input type="text" id="mySearch" onkeyup="setHomeSideBar()" placeholder="Search.." title="Type in a category">
                 <ul id="myMenu">
-                  <li><a href="#">HTML</a></li>
-                  <li><a href="#">CSS</a></li>
-                  <li><a href="#">JavaScript</a></li>
-                  <li><a href="#">PHP</a></li>
-                  <li><a href="#">Python</a></li>
-                  <li><a href="#">jQuery</a></li>
+                  <li><a onclick="setAnchor();" href="javascript:void(0);">.NET</a></li>
                   <li><a href="#">SQL</a></li>
-                  <li><a href="#">Bootstrap</a></li>
-                  <li><a href="#">Node.js</a></li>
+                  <li><a href="#">AWS Cloud</a></li>
+                  <li><a href="#">Javascript</a></li>
+                  <li><a href="#">Python</a></li>
+                  <li><a href="#">Angular</a></li>
+                  <li><a href="#">Interview Questions</a></li>
                 </ul>
               </div>
 
               <div class="right">
-                <h2>Page Content</h2>
-                <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
-                <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
-                <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
-                <p>Some text..</p>
+                <h2>Let's start...</h2> <br/><br/><br/><br/>
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="card" style="height:350px; width:350px">
+
+                              <a href="#">
+                                <img class="card-img-top" src="images\net_framwork_logo.jpg" alt=".Net Framework" style="width:100%">
+                                <h3>Learn C# .NET course</h3>
+                              </a>
+
+                          </div>
+                      </div>
+                       <div class="col-md-2">
+                      </div>
+                      <div class="col-md-4">
+
+                          <div class="card" style="height:350px; width:350px">
+                              <a href="#">
+                                <br/><br/><br/><br/>
+                                <img class="card-img-top" src="images\sql-logo.jpg" alt="SQL Server" style="width:100%">
+                                <h3>Learn SQL Server course</h3>
+                              </a>
+                          </div>
+                      </div>
+
+                      <div class="col-md-2">
+                      </div>
+
+                  </div>
+                  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                   <div class="row">
+                      <div class="col-md-4">
+                          <div class="card" style="height:350px; width:350px">
+
+                              <a href="#">
+                                <img class="card-img-top" src="images\aws_logo.jpg" alt="AWS Course" style="width:100%">
+                                <h3>Learn AWS course</h3>
+                              </a>
+
+                          </div>
+                      </div>
+                       <div class="col-md-2">
+                      </div>
+                      <div class="col-md-4">
+
+                          <div class="card" style="height:350px; width:350px">
+                              <a href="#">
+
+                                <img class="card-img-top" src="images\javascript_logo.png" alt="Javascript" style="width:100%">
+                                <h3>Learn Javascript course</h3>
+                              </a>
+                          </div>
+                      </div>
+
+                      <div class="col-md-2">
+                      </div>
+
+                  </div>
+                    <br/><br/><br/>
+                   <div class="row">
+                      <div class="col-md-4">
+                          <div class="card" style="height:350px; width:350px">
+
+                              <a href="#">
+                                <img class="card-img-top" src="images\python_logo.jpeg" alt="Python course" style="width:100%">
+                                <br/><br/><br/>
+                                  <h3>Learn Python course</h3>
+                              </a>
+
+                          </div>
+                      </div>
+                       <div class="col-md-2">
+                      </div>
+                      <div class="col-md-4">
+
+                          <div class="card" style="height:280px; width:280px">
+                              <a href="#">
+
+                                <img class="card-img-top" src="images\angular_logo.png" alt="Angular course" style="width:100%">
+                                <h3>Learn Angular course</h3>
+                              </a>
+                          </div>
+                      </div>
+
+                      <div class="col-md-2">
+                      </div>
+                  </div>
               </div>
             </div>
 
@@ -146,14 +226,17 @@
 
      <!-- Footer -->
      <!-- Copyright -->
-    <div class="footer">© 2019 Copyright:
-      <a href="infobook.co.in"> infobook.co.in</a>
+    <div style="background-color: #555; padding-bottom: 0px; height:200px;text-align: center; color:#FFF;"><br/> © 2019 Copyright:
+        <a style="color:#209CEE;" href="infobook.co.in"> infobook.co.in</a>
     </div>
     <!-- Copyright -->
     <!-- Footer -->
-
-
-
+     <script>
+         //set anchor tak click value
+        function setAnchor() {
+            document.getElementById("btndotnettab").click();
+        }
+     </script>
     <script type='text/javascript' src='js/custom.js'></script>
 </body>
 </html>
