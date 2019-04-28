@@ -14,9 +14,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Febicon CSS -->
     <link rel="icon" type="image/png" href="images/favi_ib.png" />
-    <!-- Bootstrap CSS -->
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- FontAwesome CSS -->
 
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -27,80 +31,70 @@
 
 </head>
 <body>
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="site-branding ">
-                        <h1 class="site-title"><a href="index.html" rel="home">info<span>book</span></a></h1>
+        <table style="width:100%;">
+            <tr style="height:100px;">
+                <th>
+                    <div>
+                        <h1 class="site-title"><a href="index.html" rel="home">&nbsp;Info<span>Book.</span></a></h1>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="titlestyle"></div>
-                </div>
-                <div class="col-md-3">
-                    <div class="titlestyle">
-                    </div>
-                </div>
-                 <div class="col-md-3">
-                        <div class="infocontact">
-                        <h4>Tutorial & Training</h4>
-                        <i class="fa fa-envelope"> arvind.pravat@gmail.com</i>
-                        <i class="fa fa-phone"> +91 9035744150</i>
+                </th>
+                <th>
+                    <div style="padding-top:50px; padding-left:700px; color:#209CEE;">
+                        <h4>EMPOWER YOURSELF!</h4>
+                     </div>
+                </th>
+            </tr>
+        </table>
 
-                    </div>
-                </div>
 
-            </div>
-
-        </div>
-      <div class="tab">
-          <button class="tablinks" onclick="openCourse(event, 'hometab')" id="defaultOpen"><i class="fa fa-home fa-lg"></i></button>
+      <div id="tabheader" class="tab">
+          <button id="btndefaulttab" class="tablinks" onclick="openCourse(event, 'hometab')"><i class="fa fa-home fa-lg"></i></button>
           <button id="btndotnettab" class="tablinks" onclick="openCourse(event, 'dotnettab')">.NET</button>
-          <button class="tablinks" onclick="openCourse(event, 'javatab')">SQL</button>
-          <button class="tablinks" onclick="openCourse(event, 'awscloudtab')">AWS Cloud</button>
-          <button class="tablinks" onclick="openCourse(event, 'javascripttab')">Javascript</button>
-          <button class="tablinks" onclick="openCourse(event, 'pythontab')">Python</button>
-          <button class="tablinks" onclick="openCourse(event, 'angulartab')">Angular</button>
+          <button id="btnsqltab" class="tablinks" onclick="openCourse(event, 'sqltab')">SQL</button>
+          <button id="btnawscloudtab" class="tablinks" onclick="openCourse(event, 'awscloudtab')">AWS Cloud</button>
+          <button id="btnjavascripttab" class="tablinks" onclick="openCourse(event, 'javascripttab')">Javascript</button>
+          <button id="btnpythontab" class="tablinks" onclick="openCourse(event, 'pythontab')">Python</button>
+          <button id="btnangulartab" class="tablinks" onclick="openCourse(event, 'angulartab')">Angular</button>
+          <button id="btncontacttab" class="tablinks" onclick="openCourse(event, 'contacttab')">Contact Us</button>
           <div class="dropdown">
               <button onclick="setDropdownMenu()" class="dropbtn">Interview Questions <span class="caret"></span> </button>
               <div id="myDropdown" class="dropdown-content">
                 <a href="#dotnettab">.NET</a>
-                <a href="#javatab">Java</a>
+                <a href="#sqltab">SQL</a>
                 <a href="#awscloudtab">AWS Cloud</a>
                 <a href="#javascripttab">Javascript</a>
                 <a href="#pythontab">Python</a>
                 <a href="#angulartab">Angular</a>
               </div>
-              </div>
+          </div>
+
       </div>
 
-      <div id="hometab" class="tabcontent">
+      <div id="hometab" style="margin-left:15px;margin-right: 15px;" class="tabcontent">
 
             <div class="row">
               <div class="left">
                 <h3>Courses</h3>
                 <input type="text" id="mySearch" onkeyup="setHomeSideBar()" placeholder="Search.." title="Type in a category">
                 <ul id="myMenu">
-                  <li><a onclick="setAnchor();" href="javascript:void(0);">.NET</a></li>
-                  <li><a href="#">SQL</a></li>
-                  <li><a href="#">AWS Cloud</a></li>
-                  <li><a href="#">Javascript</a></li>
-                  <li><a href="#">Python</a></li>
-                  <li><a href="#">Angular</a></li>
+                  <li><a onclick="setDotnettab();" href="javascript:void(0);">.NET</a></li>
+                  <li><a onclick="setSqltab();" href="javascript:void(0);">SQL</a></li>
+                  <li><a onclick="setAwstab();" href="javascript:void(0);">AWS Cloud</a></li>
+                  <li><a onclick="setJavascripttab();" href="javascript:void(0);">Javascript</a></li>
+                  <li><a onclick="setPythontab();" href="javascript:void(0);">Python</a></li>
+                  <li><a onclick="setAngulartab();" href="javascript:void(0);">Angular</a></li>
                   <li><a href="#">Interview Questions</a></li>
                 </ul>
               </div>
 
               <div class="right">
-                <h2>Let's start...</h2> <br/><br/><br/><br/>
+                <h1 style="font-family:'Snell Roundhand';">Let's start...</h1> <br/><br/><br/><br/>
                   <div class="row">
                       <div class="col-md-4">
                           <div class="card" style="height:350px; width:350px">
 
-                              <a href="#">
-                                <img class="card-img-top" src="images\net_framwork_logo.jpg" alt=".Net Framework" style="width:100%">
+                              <a onclick="setDotnettab();" href="javascript:void(0);">
+                                <img class="card-img-top" src="images/net_framwork_logo.jpg" alt=".Net Framework" style="width:100%">
                                 <h3>Learn C# .NET course</h3>
                               </a>
 
@@ -111,9 +105,9 @@
                       <div class="col-md-4">
 
                           <div class="card" style="height:350px; width:350px">
-                              <a href="#">
+                              <a onclick="setSqltab();" href="javascript:void(0);">
                                 <br/><br/><br/><br/>
-                                <img class="card-img-top" src="images\sql-logo.jpg" alt="SQL Server" style="width:100%">
+                                <img class="card-img-top" src="images/sql-logo.jpg" alt="SQL Server" style="width:100%">
                                 <h3>Learn SQL Server course</h3>
                               </a>
                           </div>
@@ -128,8 +122,8 @@
                       <div class="col-md-4">
                           <div class="card" style="height:350px; width:350px">
 
-                              <a href="#">
-                                <img class="card-img-top" src="images\aws_logo.jpg" alt="AWS Course" style="width:100%">
+                              <a onclick="setAwstab();" href="javascript:void(0);">
+                                <img class="card-img-top" src="images/aws_logo.jpg" alt="AWS Course" style="width:100%">
                                 <h3>Learn AWS course</h3>
                               </a>
 
@@ -140,9 +134,9 @@
                       <div class="col-md-4">
 
                           <div class="card" style="height:350px; width:350px">
-                              <a href="#">
+                              <a onclick="setJavascripttab();" href="javascript:void(0);">
 
-                                <img class="card-img-top" src="images\javascript_logo.png" alt="Javascript" style="width:100%">
+                                <img class="card-img-top" src="images/javascript_logo.png" alt="Javascript" style="width:100%">
                                 <h3>Learn Javascript course</h3>
                               </a>
                           </div>
@@ -157,8 +151,8 @@
                       <div class="col-md-4">
                           <div class="card" style="height:350px; width:350px">
 
-                              <a href="#">
-                                <img class="card-img-top" src="images\python_logo.jpeg" alt="Python course" style="width:100%">
+                              <a onclick="setPythontab();" href="javascript:void(0);">
+                                <img class="card-img-top" src="images/python_logo.jpeg" alt="Python course" style="width:100%">
                                 <br/><br/><br/>
                                   <h3>Learn Python course</h3>
                               </a>
@@ -170,9 +164,9 @@
                       <div class="col-md-4">
 
                           <div class="card" style="height:280px; width:280px">
-                              <a href="#">
+                              <a onclick="setAngulartab();" href="javascript:void(0);">
 
-                                <img class="card-img-top" src="images\angular_logo.png" alt="Angular course" style="width:100%">
+                                <img class="card-img-top" src="images/angular_logo.png" alt="Angular course" style="width:100%">
                                 <h3>Learn Angular course</h3>
                               </a>
                           </div>
@@ -186,18 +180,707 @@
 
       </div>
       <div id="dotnettab" class="tabcontent">
-          <h3>.NET</h3>
-          <p>.NET is the capital of .NET.</p>
+        <div class="row">
+          <div class="col-md-12">
+             <div class="tab1">
+
+                 <div style="font-size:5px; border-bottom: 1px solid #ccc; padding-top:14px; padding-left:14px;">
+                     <h3>C# .NET</h3></div>
+                  <button class="tab1links" onclick="setSubMenu(event, 'csharpbasic')" id="defaulttab">C# Basics</button>
+                  <button class="tab1links" onclick="setSubMenu(event, 'arraystring')">C# Array & String</button>
+                  <button class="tab1links" onclick="setSubMenu(event, 'oops')">C# OOPs Concept</button>
+                 <button class="tab1links" onclick="setSubMenu(event, 'Tokyo')">C# Garbage Collection</button>
+                 <button class="tab1links" onclick="setSubMenu(event, 'Tokyo')">C# Exception & Reflection</button>
+                  <button class="tab1links" onclick="setSubMenu(event, 'netcollection')">C# Collections</button>
+                 <button class="tab1links" onclick="setSubMenu(event, 'netdelegate')">C# Delegates & Events</button>
+                 <button class="tab1links" onclick="setSubMenu(event, 'Tokyo')">C# Anonymous Function</button>
+                 <button class="tab1links" onclick="setSubMenu(event, 'Tokyo')">C# Multithreading Concept</button>
+                 <button class="tab1links" onclick="setSubMenu(event, 'Tokyo')">C# Synchronization</button>
+                 <button class="tab1links" onclick="setSubMenu(event, 'Tokyo')">C# SOLID Principals</button>
+                 <button class="tab1links" onclick="setSubMenu(event, 'Tokyo')">C# Design Pattern</button>
+                 <button class="tab1links" onclick="setSubMenu(event, 'Tokyo')">C# AOPs</button>
+                 <button class="tab1links" onclick="setSubMenu(event, 'Tokyo')">C# Console Application</button>
+                 <button class="tab1links" onclick="setSubMenu(event, 'Tokyo')">C# WPF</button>
+                 <button class="tab1links" onclick="setSubMenu(event, 'Tokyo')">C# ASP.NET MVC</button>
+                 <button class="tab1links" onclick="setSubMenu(event, 'Tokyo')">C# WCF</button>
+                 <button class="tab1links" onclick="setSubMenu(event, 'Tokyo')">C# WEB API</button>
+                 <button class="tab1links" onclick="setSubMenu(event, 'Tokyo')">C# Entity Framework</button>
+                 <button class="tab1links" onclick="setSubMenu(event, 'Tokyo')">C# Interview Question</button>
+
+            </div>
+
+            <div id="csharpbasic" class="tab1content">
+              <div>
+                  <h2><span style="color:#209CEE;">What is C# ?</span></h2>
+                              <p>C# is a type safe object oriented language that enables developers to build variety of
+                                  secure and robust applications to execute on the .NET framework. User can create Windows client applications,
+                                  XML web services, distributed components, client – server applications and database applications.</p>
+                              <p>C# supports encapsulation, inheritance, polymorphism. C# supports pointers and unsafe code for memory access.
+                                  C# supports the interoperability feature. It helps the user to perform all work similar to the C++
+                                  application.</p>
+                              <p><b>Anders Hejlsberg</b> is known as the <b>founder of C# language</b>.</p>
+                              <h2><span style="color:#209CEE;">C# Features</span></h2>
+                              <p>Features of C# are mentioned below:</p>
+                              <p>1. It is type safe providing implicit conversions by default data type to the derived type</p>
+                              <p>2. The enumeration members are placed in its scope</p>
+                              <p>3. The garbage collection is automatic through the finalization process</p>
+                              <p>4. The variance feature allows to specify in and out parameters on the generic types</p>
+                              <p>5. The calls to the COM methods and Interop with less code in the system</p>
+                              <p>6. The C# code can be compiled on various platforms</p>
+                              <h2><span style="color:#209CEE;">.NET Framework Architecture</span></h2>
+                              <p>The .NET framework is responsible for executing the C# program in the system. Framework is the combination
+                                  of common language runtime and a set of class libraries. The implementation of Common Language
+                                  Infrastructure (CLI) is done through Common Language Runtime (CLR).</p><p>Microsoft .NET framework consists
+                                  of the following main components:</p>
+                              <p>· Common Language Runtime</p><p>· Base class library</p><p>· User Program interfaces</p>
+                              <p>The architecture diagram for .NET architecture with relationship to C# is as shown below:</p>
+                              <p><img src="images/clr_logo.png" /></p><p><strong>Common Language Runtime (CLR):</strong> The CLR is the most important component of the .NET framework. It is an environment where all the programs using the .NET technology are executed. The services provided by CLR includes code compilation, memory allocation, and garbage collection. The code is translated into Intermediate language (IL). The IL code can be executed across different platforms.</p><p>IL is converted into machine language during the execution by Just – In – Time compiler. During the JIT compilation, the code is checked for type safety. CLR consists of common set of rules followed by all languages of the .NET framework. This set of rules is known as Common Language Specification (CLS). CLS helps the objects and applications created in certain language to interact with the object and applications of another language.</p><p>CLS has the specification defined as Common Type System (CTS). It provides a type system that is common across all languages. CTS is used to define the data types declaration, use and managed in the code at run time.</p><p>During the execution the CLR performs the following tasks:</p><p><strong>1) Loading assemblies and identifying namespaces:</strong> Assemblies are loaded in the memory. After loading the assemblies, CLR identifies namespaces for the code in the assemblies. Namespaces are the collection of classes.</p><p><strong>2) JIT compilation: </strong>Before the code is executed, the IL code is converted into machine language by the JIT compiler. In the verification process, the IL code is checked for memory locations available to access, methods called through the properly defined types.</p><p><strong>3) Garbage collection: </strong>The garbage collection process executes after the JIT compilation manages the allocation and de - allocation of memory for an application.</p><p><span><strong>Base Class Library: </strong></span>The .NET framework class library works with any .NET language such as VB.NET, VC#, VC++.NET. The class library provides classes that can be used in the code to accomplish the common programming tasks.</p><p>The .NET framework class library consists of namespaces that are contained within the assemblies.</p><p><span><strong>Namespaces: </strong></span>The namespaces helps user to create logical groups of related classes and interfaces. It allows user to organize classes that can be used for accessing by other applications. They can be used to avoid conflicts between classes that have same names.</p><p><span><strong>Assemblies: </strong></span>An assembly is a single deployment unit that contains all information regarding implementation of classes, structures and interfaces. The assembly holds the information about itself. The information is known as metadata.</p>
+
+                              <h2><span style="color:#209CEE;">.NET CLR Functions</span></h2>
+                              <p>Following are the functions of the CLR. </p>
+                              <p>&nbsp;. It converts program into native code. </p>
+                              <p>&nbsp;. Handles Exceptions </p>
+                              <p>&nbsp;. Provides type safety </p>
+                              <p>&nbsp;. Memory management </p>
+                              <p>&nbsp;. Provides security </p>
+                              <p>&nbsp;. Improved performance </p>
+                              <p>&nbsp;. Language independent </p>
+                              <p>&nbsp;. Platform independent </p>
+                              <p>&nbsp;. Garbage collection </p>
+                              <p>&nbsp;. Provides language features such as inheritance, interfaces, and overloading for object-oriented programmings.</p>
+
+                              <h2><span style="color:#209CEE;">C# Simple Example</span></h2>
+                                <div>
+<pre class="pre-scrollable">
+class Program
+{
+    static void Main(string[] args)
+    {
+        System.Console.WriteLine("Hello World!");
+    }
+}
+</pre>
+                                </div>
+                                <p>Output:</p>
+                                <div><pre>Hello World!
+                                </pre></div>
+                                <h2><span style="color:#209CEE;">C# Variable</span></h2>
+                                <p>A variable is a name of memory location and used to store data. Its value can be changed and it can be reused several times.</p>
+                                <p>Example shown below:</p>
+<pre>
+int i, j;
+double d;
+float f;
+char ch;
+</pre>
+                                 <p>Initialization of variable shown below:</p>
+<pre>
+int i=1,j=7;
+float f=8.8;
+char ch='A'
+</pre>
+
+                                <h2><span style="color:#209CEE;">C# Data Types</span></h2>
+                                <p>A data type specifies the type of data that a variable can store such as integer, floating, character etc.</p>
+                                <table class="table table-bordered">
+                                   <thead>
+                                        <tr class="success">
+                                          <th>Types</th>
+                                          <th>Data Types</th>
+                                       </tr>
+                                   </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td>Value Data Type</td>
+                                          <td>short, int, char, float, double etc</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Reference Data Type</td>
+                                          <td>String, Class, Object and Interface</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Pointer Data Type</td>
+                                          <td>Pointers</td>
+                                       </tr>
+                                    </tbody>
+                                </table>
+                                <h2><span style="color:#209CEE;">C# operators</span></h2>
+                                <p><img src="images/operator-logo.png" /></p>
+                                <h2><span style="color:#209CEE;">C# Ternary Operator</span></h2>
+                                  <p> Example below given:</p>
+<pre>
+int x = 40, y = 20;
+var result = x > y ? "x is greater than y" : "x is less than or equal to y";
+Console.WriteLine(result);
+</pre>
+<pre>
+x is greater than y
+</pre>
+                                <h2><span style="color:#209CEE;">C# IF-else Statement</span></h2>
+                                <p>Syntax:</p>
+<pre>
+if (condition)
+{
+    //To Do
+}
+else
+{
+    //To Do
+}
+</pre>
+                                <h2><span style="color:#209CEE;">C# Switch Statement</span></h2>
+                                <p>The C# switch statement executes one statement from multiple conditions.</p>
+                                <p>Syntax:</p>
+<pre>
+switch(expression)
+{
+case value1:
+ //todo;
+ break;
+case value2:
+ //todo;
+ break;
+......
+
+default:
+ //todo
+ break;
+}
+</pre>
+                                  <p>Example:</p>
+<pre>
+using System;
+public class SwitchExample
+{
+  public static void Main(string[] args)
+  {
+      Console.WriteLine("Enter a number:");
+      int num = Convert.ToInt32(Console.ReadLine());
+
+      switch (num)
+      {
+          case 40: Console.WriteLine("It is 40"); break;
+          case 50: Console.WriteLine("It is 50"); break;
+          case 60: Console.WriteLine("It is 60"); break;
+          default: Console.WriteLine("Not Matching"); break;
+      }
+  }
+}
+</pre>
+                                            <h2><span style="color:#209CEE;">C# For Loop Statement</span></h2>
+                                            <p>The C# for loop is used to iterate a part of the program several times. If the number of iteration is fixed, it is recommended to use for loop than while or do-while loops.</p>
+<pre>
+for(initialization; condition; incr/decr)
+{
+//todo
+}
+</pre>
+<pre>
+using System;
+public class ForExample
+{
+  public static void Main(string[] args)
+  {
+      for(int i=1;i<=10;i++){
+        Console.WriteLine(i);
+      }
+  }
+}
+</pre>
+                                            <h2><span style="color:#209CEE;">C# While Loop Statement</span></h2>
+                                            <p>While loop is used to iterate a part of the program several times. If the number of iteration is not fixed, it is recommended to use while loop than for loop.</p>
+<pre>
+while(condition){
+//code to be executed
+}
+</pre>
+<pre>
+using System;
+public class WhileExample
+{
+  public static void Main(string[] args)
+  {
+      int i=1;
+      while(i<=10)
+      {
+          Console.WriteLine(i);
+          i++;
+      }
+ }
+}
+</pre>
+                  <h2><span style="color:#209CEE;">C# Do-While Loop Statement</span></h2>
+                                            <p>The C# do-while loop is used to iterate a part of the program several times. If the number of iteration is not fixed and you must have to execute the loop at least once, it is recommended to use do-while loop.</p>
+<pre>
+do{
+//code to be executed
+}while(condition);
+</pre>
+<pre>
+using System;
+public class DoWhileExample
+{
+  public static void Main(string[] args)
+  {
+      int i = 1;
+
+      do{
+          Console.WriteLine(i);
+          i++;
+      } while (i <= 10) ;
+
+ }
+}
+</pre>
+                  <h2><span style="color:#209CEE;">C# Break Statement</span></h2>
+                                            <p>The C# break is used to break loop or switch statement. It breaks the current flow of the program at the given condition. In case of inner loop, it breaks only inner loop.</p>
+<pre>
+jump statement;
+break;
+</pre>
+<pre>
+using System;
+public class BreakExample
+{
+  public static void Main(string[] args)
+  {
+      for (int i = 1; i <= 10; i++)
+      {
+          if (i == 5)
+          {
+              break;
+          }
+          Console.WriteLine(i);
+      }
+  }
+}
+</pre>
+                  <p>Output:</p>
+<pre>
+1
+2
+3
+4
+</pre>
+                  <h2><span style="color:#209CEE;">C# Continue Statement</span></h2>
+                                            <p>The C# break is used to break loop or switch statement. It breaks the current flow of the program at the given condition. In case of inner loop, it breaks only inner loop.</p>
+<pre>
+jump-statement;
+continue;
+</pre>
+<pre>
+using System;
+public class ContinueExample
+{
+  public static void Main(string[] args)
+  {
+     for(int i=1;i<=10;i++){
+        if(i==5){
+            continue;
+        }
+        Console.WriteLine(i);
+    }
+  }
+}
+</pre>
+                  <p>Output:</p>
+<pre>
+1
+2
+3
+4
+6
+7
+8
+9
+10
+</pre>
+                  <h2><span style="color:#209CEE;">C# Goto Statement</span></h2>
+                                            <p>The C# goto statement is also known jump statement. It is used to transfer control to the other part of the program. It unconditionally jumps to the specified label.</p>
+<pre>
+using System;
+public class GotoExample
+{
+  public static void Main(string[] args)
+  {
+  ineligible:
+      Console.WriteLine("Not eligible!");
+
+  Console.WriteLine("Enter your age:\n");
+  int age = Convert.ToInt32(Console.ReadLine());
+  if (age < 18){
+          goto ineligible;
+  }
+  else
+  {
+          Console.WriteLine("Eligible");
+  }
+  }
+}
+</pre>
+                  <h2><span style="color:#209CEE;">C# Method/Function</span></h2>
+                                            <p>Method/Function is a block of code that has a signature. Function is used to execute statements specified in the code block.</p>
+<pre>
+<access-specifier><return-type>FunctionName(<parameters>)
+{
+// method body
+// return statement
+}
+</pre>
+
+<pre>
+public return add(int a, int b)
+{
+    return  a+ b;
+}
+</pre>
+                  <h2><span style="color:#209CEE;">C# Call By Value</span></h2>
+                                            <p>value-type parameters are that pass a copy of original value to the function rather than reference. It does not modify the original value. A change made in passed value does not alter the actual value.</p>
+<pre>
+using System;
+namespace CallByValueExample
+{
+    class Program
+    {
+        // User defined function
+        public void Print(int val)
+        {
+             val *= val; // Manipulating value
+            Console.WriteLine("Value inside the show function "+val);
+
+        }
+
+        static void Main(string[] args)
+        {
+            int val = 50;
+            Program program = new Program();
+            Console.WriteLine("Value before calling the function "+val);
+            program.Print(val); // Calling Function by passing value
+            Console.WriteLine("Value after calling the function " + val);
+        }
+    }
+}
+</pre>
+<p>Output:</p>
+<pre>
+Value before calling the function 50
+Value inside the show function 2500
+Value after calling the function 50
+</pre>
+                                    <h2><span style="color:#209CEE;">C# Call By Reference</span></h2>
+                                            <p>C# provides a ref keyword to pass argument as reference-type. It passes reference of arguments to the function rather than copy of original value. The changes in passed values are permanent and modify the original variable value.C# provides a ref keyword to pass argument as reference-type. It passes reference of arguments to the function rather than copy of original value. The changes in passed values are permanent and modify the original variable value.</p>
+<pre>
+using System;
+namespace CallByReferenceExample
+{
+    class Program
+    {
+        // User defined function
+        public void Show(ref int val)
+        {
+             val *= val; // Manipulating value
+            Console.WriteLine("Value inside the show function "+val);
+
+        }
+        // Main function, execution entry point of the program
+        static void Main(string[] args)
+        {
+            int val = 50;
+            Program program = new Program(); // Creating Object
+            Console.WriteLine("Value before calling the function "+val);
+            program.Show(ref val); // Calling Function by passing reference
+            Console.WriteLine("Value after calling the function " + val);
+        }
+    }
+}
+</pre>
+<p>Output:</p>
+<pre>
+Value before calling the function 50
+Value inside the show function 2500
+Value after calling the function 2500
+</pre>
+
+                                                      <h2><span style="color:#209CEE;">C# Out Parameter</span></h2>
+                                            <p>C# provides out keyword to pass arguments as out-type. It is like reference-type, except that it does not require variable to initialize before passing. We must use out keyword to pass argument as out-type. It is useful when we want a function to return multiple values.</p>
+<pre>
+using System;
+namespace OutParameter
+{
+    class Program
+    {
+        // User defined function
+        public void Show(out int val) // Out parameter
+        {
+            int square = 5;
+            val = square;
+            val *= val; // Manipulating value
+        }
+        // Main function, execution entry point of the program
+        static void Main(string[] args)
+        {
+            int val = 50;
+            Program program = new Program(); // Creating Object
+            Console.WriteLine("Value before passing out variable " + val);
+            program.Show(out val); // Passing out argument
+            Console.WriteLine("Value after recieving the out variable " + val);
+        }
+    }
+}
+</pre>
+<p>Output:</p>
+<pre>
+Value before passing out variable 50
+Value after receiving the out variable 25
+</pre>
+                                        <h2><span style="color:#209CEE;">C# Ref Vs Out</span></h2>
+                                        <p><img src="images/refout-logo.png" /></p>
+              </div>
+
+
+            </div>
+
+            <div id="arraystring" class="tab1content">
+              <h2><span style="color:#209CEE;">C# Arrays</span></h2>
+                <p>An array in C# is a group of similar types of elements that have contiguous memory location. In C#, array is an object of base type System.Array. In C#, array index starts from 0. We can store only fixed set of elements in C# array.</p>
+                <br/>
+                <p><img src="images/arrays-logo.jpg" /></p>
+                <p>Syntax:</p>
+                <p>
+                    < Data Type > [ ] < Name_Array >
+                </p>
+                <p>Example</p>
+<pre>
+int[] x;  // can store int values
+string[] s; // can store string values
+double[] d; // can store double values
+Student[] stud1; // can store instances of Student class which is custom class
+</pre>
+                <p><b>Key Points:</b></p>
+                <p>. In C#, all arrays are dynamically allocated.</p>
+                <p>. Since arrays are objects in C#, we can find their length using member length. This is different from C/C++
+                    where we find length using sizeof. </p>
+                <p>. A C# array variable can also be declared like other variables with [] after the data type.</p>
+                <p>. The variables in the array are ordered and each has an index beginning from 0.</p>
+                <p>. C# array is an object of base type System.Array.</p>
+                <p>. Default values of numeric array and reference type elements are set to be respectively zero and null.</p>
+                <h2><span style="color:#209CEE;">C# Array Types</span></h2>
+                <p>There are 3 types of arrays in C# programming:</p>
+
+                <p>Single Dimensional Array</p>
+                <p>Multidimensional Array</p>
+                <p>Jagged Array</p>
+
+                <h2><span style="color:#209CEE;">C# Single Dimensional Array</span></h2>
+                <p>To create single dimensional array, you need to use square brackets [] after the type.</p>
+                <pre>int[] arr = new int[5];//creating array</pre>
+                <p>Example:</p>
+<pre>
+using System;
+public class ArraySingleDExample
+{
+    public static void Main(string[] args)
+    {
+        int[] arr = new int[5];//creating array
+        arr[0] = 10;//initializing array
+        arr[2] = 20;
+        arr[4] = 30;
+
+        //traversing array
+        for (int i = 0; i < arr.Length; i++)
+        {
+            Console.WriteLine(arr[i]);
+        }
+    }
+}
+</pre>
+                <p>Output:</p>
+                <pre>10 0 20 0 30</pre>
+                <p>There are 3 ways to initialize array at the time of declaration.</p>
+                <pre>int[] arr = new int[5]{ 10, 20, 30, 40, 50 };  </pre>
+                <pre>int[] arr = new int[]{ 10, 20, 30, 40, 50 };   </pre>
+                <pre>int[] arr = { 10, 20, 30, 40, 50 };  </pre>
+
+                <h2><span style="color:#209CEE;">C# Multidimensional Arrays</span></h2>
+                <p>The multidimensional array is also known as rectangular arrays in C#. It can be two dimensional or three dimensional. The data is stored in tabular form (row * column) which is also known as matrix.</p>
+                <p>Example:</p>
+<pre>
+int[,] arr=new int[3,3];//declaration of 2D array
+int[,,] arr=new int[3,3,3];//declaration of 3D array
+</pre>
+<pre>
+using System;
+public class MultiArrayExample
+{
+    public static void Main(string[] args)
+    {
+        int[,] arr=new int[3,3];//declaration of 2D array
+        arr[0,1]=10;//initialization
+        arr[1,2]=20;
+        arr[2,0]=30;
+
+        //traversal
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                Console.Write(arr[i,j]+" ");
+            }
+            Console.WriteLine();//new line at each row
+        }
+    }
+}
+</pre>
+                <p>Output:</p>
+<pre>
+0 10 0
+0 0 20
+30 0 0
+</pre>
+                <p>There are 3 ways to initialize  multidimensional array at the time of declaration.</p>
+                <pre>int[,] arr = new int[3,3]= { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };  </pre>
+                <pre>int[,] arr = new int[,]{ { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };  </pre>
+                <pre>int[,] arr = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } }; </pre>
+                <h2><span style="color:#209CEE;">C# Jagged Arrays</span></h2>
+                <p>Jagged array is also known as "array of arrays" because its elements are arrays. The element size of jagged array can be different.</p>
+                <p>Example:</p>
+<pre>
+int[][] arr = new int[2][];
+Initialization
+arr[0] = new int[4];
+arr[1] = new int[6];
+Inserting elements
+arr[0] = new int[4] { 11, 21, 56, 78 };
+arr[1] = new int[6] { 42, 61, 37, 41, 59, 63 };
+</pre>
+<pre>
+public class JaggedArrayTest
+{
+    public static void Main()
+    {
+        int[][] arr = new int[2][];// Declare the array
+
+        arr[0] = new int[] { 11, 21, 56, 78 };// Initialize the array
+        arr[1] = new int[] { 42, 61, 37, 41, 59, 63 };
+
+        // Traverse array elements
+        for (int i = 0; i < arr.Length; i++)
+        {
+            for (int j = 0; j < arr[i].Length; j++)
+            {
+                System.Console.Write(arr[i][j]+" ");
+            }
+            System.Console.WriteLine();
+        }
+    }
+}
+</pre>
+                <p>Output:</p>
+<pre>
+11 21 56 78
+42 61 37 41 59 63
+</pre>
+                <p>Let's see a simple example of jagged array which initializes the jagged arrays upon declaration.</p>
+<pre>
+public class JaggedArrayTest
+{
+    public static void Main()
+    {
+        int[][] arr = new int[3][]{
+        new int[] { 11, 21, 56, 78 },
+        new int[] { 2, 5, 6, 7, 98, 5 },
+        new int[] { 2, 5 }
+        };
+
+        // Traverse array elements
+        for (int i = 0; i < arr.Length; i++)
+        {
+            for (int j = 0; j < arr[i].Length; j++)
+            {
+                System.Console.Write(arr[i][j]+" ");
+            }
+            System.Console.WriteLine();
+        }
+    }
+}
+</pre>
+                 <p>Output:</p>
+<pre>
+11 21 56 78
+2 5 6 7 98 5
+2 5
+</pre>
+                            <h2><span style="color:#209CEE;">C# Params</span></h2>
+                            <p>The params is a keyword which is used to specify a parameter that takes variable number of arguments.
+                                It is useful when we don't know the number of arguments prior.
+                                Only one params keyword is allowed and no additional parameter is permitted after params
+                                keyword in a function declaration.</p>
+                            <p>Example:</p>
+<pre>
+using System;
+namespace AccessSpecifiers
+{
+    class Program
+    {
+        // User defined function
+        public void Print(params int[] val) // Params Paramater
+        {
+            for (int i=0; i < val.Length; i++)
+            {
+                Console.WriteLine(val[i]);
+            }
+        }
+
+        static void Main(string[] args)
+        {
+            Program program = new Program(); // Creating Object
+            program.Print(2,4,6,8,10,12,14); // Passing arguments of variable length
+        }
+    }
+}
+</pre>
+                 <p>Output:</p>
+<pre>
+2 4 6 8 10 12 14
+</pre>
+                <h2><span style="color:#209CEE;">C# Array class</span></h2>
+                            <p>C# Array class Signature</p>
+<pre>
+[SerializableAttribute]
+[ComVisibleAttribute(true)]
+public abstract class Array : ICloneable, IList, ICollection,
+IEnumerable, IStructuralComparable, IStructuralEquatable
+</pre>
+
+            </div>
+
+            <div id="netcontrolstmt" class="tab1content">
+              <h3>C# Control Statements</h3>
+              <p>C# Control Statements</p>
+            </div>
+              <div id="netcollection" class="tab1content">
+              <h3>C# Control Statements</h3>
+              <p>C# Control Statements</p>
+            </div>
+              <div id="netdelegate" class="tab1content">
+              <h3>C# Control Statements</h3>
+              <p>C# Control Statements</p>
+            </div>
+
+
+
+          </div>
+        </div>
+
+
       </div>
 
-      <div id="javatab" class="tabcontent">
-          <h3>Java</h3>
-          <p>Java is the capital of Java</p>
+      <div id="sqltab" class="tabcontent">
+          <h3>SQL</h3>
+          <p>SQL is the capital of SQL</p>
       </div>
 
       <div id="awscloudtab" class="tabcontent">
           <h3>AWS Cloud</h3>
-          <p>AWS Cloud is the capital of AWS Cloud.</p>
+
       </div>
 
       <div id="javascripttab" class="tabcontent">
@@ -220,23 +903,28 @@
           <p>Interview is the capital of AWS Cloud.</p>
       </div>
 
+      <div id="contacttab" class="tabcontent">
+          <div>
+                <h3>Contact Details</h3> <br/>
+                <p style="font-size:20px;"><i class="fa fa-envelope"> arvind.pravat@gmail.com</i></p>
+                <p style="font-size:20px;"><i class="fa fa-phone"> +91 9035744150</i></p>
+
+          </div>
+      </div>
 
 
 
 
      <!-- Footer -->
      <!-- Copyright -->
-    <div style="background-color: #555; padding-bottom: 0px; height:200px;text-align: center; color:#FFF;"><br/> © 2019 Copyright:
-        <a style="color:#209CEE;" href="infobook.co.in"> infobook.co.in</a>
-    </div>
+    <footer class="footer"><br/> © 2019 Copyright:
+        <a href="infobook.co.in"> infobook.co.in</a>
+    </footer>
     <!-- Copyright -->
     <!-- Footer -->
-     <script>
-         //set anchor tak click value
-        function setAnchor() {
-            document.getElementById("btndotnettab").click();
-        }
-     </script>
+
     <script type='text/javascript' src='js/custom.js'></script>
+    <script type='text/javascript' src='js/bootstrap.min.js'></script>
+
 </body>
 </html>

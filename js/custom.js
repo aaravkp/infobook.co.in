@@ -14,7 +14,7 @@
           evt.currentTarget.className += " active";
         }
         // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
+        document.getElementById("btndefaulttab").click();
 
         /* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
@@ -54,11 +54,66 @@
         }
 
 
+          //set .net tab
+        function setDotnettab() {
+            document.getElementById("btndotnettab").click();
+        }
 
+          //set sql tab
+        function setSqltab() {
+            document.getElementById("btnsqltab").click();
+        }
 
+          //set sql tab
+        function setAwstab() {
+            document.getElementById("btnawscloudtab").click();
+        }
 
+          //set sql tab
+        function setJavascripttab() {
+            document.getElementById("btnjavascripttab").click();
+        }
 
+          //set sql tab
+        function setPythontab() {
+            document.getElementById("btnpythontab").click();
+        }
 
+          //set sql tab
+        function setAngulartab() {
+            document.getElementById("btnangulartab").click();
+        }
+        // Fix Menu...............
+        //window.onscroll = function() {setFixedMenu()};
+
+        //var header = document.getElementById("tabheader");
+        //var sticky = header.offsetTop;
+
+        //function setFixedMenu() {
+          //if (window.pageYOffset > sticky) {
+            //header.classList.add("sticky");
+         // } else {
+          //  header.classList.remove("sticky");
+          //}
+        //}
+
+        // This script is for all course tabs.
+         function setSubMenu(evt, cityName) {
+          var i, tab1content, tab1links;
+          tab1content = document.getElementsByClassName("tab1content");
+          for (i = 0; i < tab1content.length; i++) {
+            tab1content[i].style.display = "none";
+          }
+          tab1links = document.getElementsByClassName("tab1links");
+          for (i = 0; i < tab1links.length; i++) {
+            tab1links[i].className = tab1links[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaulttab").click();
 
 
 
