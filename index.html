@@ -850,7 +850,7 @@ public abstract class Array : ICloneable, IList, ICollection,
 IEnumerable, IStructuralComparable, IStructuralEquatable
 </pre>
                         <p>Example with some array properies and methods</p>
-<pre class="prettyprint">
+<pre class="prettyprint pre-scrollable">
 using System;
 namespace CSharpProgram
 {
@@ -899,14 +899,124 @@ Index position of 25 is 5
 Second array elements: 0 5 7 8 9 25
 First Array elements in reverse order: 25 9 8 7 5 0
 </pre>
+                    <h2><span style="color:#209CEE;">C# Strings</span></h2>
+                            <p>C#, string is an object of System.String class that represent sequence of characters</p>
+                    <h2><span style="color:#209CEE;">string vs String</span></h2>
+                            <p>C#, string is keyword which is an alias for System.String class. Hence string and String are equivalent and we can use any.</p>
+<pre class="prettyprint">
+string s1 = "Galaxy";//string keyword
+String s2 = "Galaxy";//String class
+</pre>
+<pre class="prettyprint">
+using System;
+public class StringExample
+{
+    public static void Main(string[] args)
+    {
+        string s1 = "Nice";
 
+        char[] ch = { 'N', 'i', 'c', 'e'};
+        string s2 = new string(ch);
 
+        Console.WriteLine(s1);
+        Console.WriteLine(s2);
+    }
+}
+</pre>
+<pre>
+Nice
+Nice
+</pre>
+                <h2><span style="color:#209CEE;">C# String Compare()</span></h2>
+                            <p>C#, string compare method is used to comapre two string, if both strings are equal, it returns 0. If first string is greater than second string, it returns 1 else it returns -1.</p>
+<pre class="prettyprint">
+using System;
+public class StringExample
+{
+    public static void Main(string[] args)
+    {
+        string s1 = "hello";
+        string s2 = "hello";
+        string s3 = "bye";
+        string s4 = "hi";
+
+        Console.WriteLine(string.Compare(s1,s2));
+        Console.WriteLine(string.Compare(s2,s3));
+        Console.WriteLine(string.Compare(s3,s4));
+    }
+}
+</pre>
+<pre>
+0
+1
+-1
+</pre>
+                            <h2><span style="color:#209CEE;">C# String Remove()</span></h2>
+                            <p>C#, Remove() method is used to get a new string after removing all the characters from specified begining Index till given length.</p>
+<pre class="prettyprint">
+using System;
+public class StringExample
+{
+    public static void Main(string[] args)
+    {
+       string s1 = "Hello World";
+       string s2 = s1.Remove(2);
+       Console.WriteLine(s2);
+   }
+}
+</pre>
+<pre>
+He
+</pre>
+                    <h2><span style="color:#209CEE;">C# String Split()</span></h2>
+                            <p>The Split() method is used to split a string into substrings on the basis of characters in an array. It returns string array.</p>
+<pre class="prettyprint">
+using System;
+public class StringExample
+{
+    public static void Main(string[] args)
+    {
+       string s1 = "I am fine";
+       string[] s2 = s1.Split(' ');
+       foreach (string s3 in s2)
+       {
+        Console.WriteLine(s3);
+       }
+    }
+}
+</pre>
+<pre>
+I
+am
+fine
+</pre>
+                <h2><span style="color:#209CEE;">C# String Replace()</span></h2>
+                            <p>The Replace() method is used to get a string in which all occurrences of a specified Unicode character in this string are replaced with another specified Unicode character.</p>
+<pre class="prettyprint">
+using System;
+public class StringExample
+{
+    public static void Main(string[] args)
+    {
+       string s1 = "Welcome C#";
+       string s2 = s1.Replace("Welcome","Great");
+       Console.WriteLine(s2);
+    }
+}
+</pre>
+<pre>
+Great C#
+</pre>
 
             </div>
 
-            <div id="netcontrolstmt" class="tab1content">
-              <h3>C# Control Statements</h3>
-              <p>C# Control Statements</p>
+            <div id="oops" class="tab1content">
+                <div>
+                    <h2><span style="color:#209CEE;">OOPs Overview</span></h2>
+                            <p>Object oriented programming (OOP) is a programming structure where programs are organized around objects as opposed to action and logic. This is essentially a design philosophy that uses a different set of programming languages such as C#. Understanding OOP concepts can help
+                                make decisions about how you should design an application and what language to use.</p>
+
+                </div>
             </div>
               <div id="netcollection" class="tab1content">
               <h3>C# Control Statements</h3>
